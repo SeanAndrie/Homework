@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
   int sides;
-    cout << "PLEASE ENTER THE NUMBER OF SIDES OF THE SHAPE: (MAX OF 10 ";
+    cout << "PLEASE ENTER THE NUMBER OF SIDES OF THE SHAPE (3 TO 10): ";
     cin >> sides;
 
     if (sides == 3) {
@@ -39,7 +39,7 @@ int main(){
     }
 
     else {
-        cout << "ERROR: INVALID INPUT\nPLEASE ENTER A SHAPE WITH LESS THAN 10 SIDES" << endl;
+        cout << "ERROR: INVALID INPUT\nPLEASE ENTER A SHAPE WITH MORE THAN 3 SIDES BUT NO LESS THAN 10" << endl;
     }
 }
   
