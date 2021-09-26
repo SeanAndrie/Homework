@@ -8,7 +8,6 @@ int main(){
     cin >> pur;
     cout << "PLEASE ENTER SALE PRICE: " << endl;
     cin >> sale;
-    calc = sale - pur;
 
     if (sale > pur) {
         calc = sale - pur;
