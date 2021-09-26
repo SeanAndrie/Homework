@@ -13,7 +13,7 @@ int main(){
     if (sale > pur) {
         cout << "PURCHASE PRICE: " << pur << endl;
         cout << "SALE PRICEl " << sale  << endl;
-        cout << "PROFIT: " << calc << endl;
+        cout << "PROFIT: +" << calc << endl;
     }
 
     else {
