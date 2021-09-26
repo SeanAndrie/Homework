@@ -39,7 +39,7 @@ int main(){
     }
 
     else {
-        cout << "ERROR: INVALID INPUT\nPLEASE ENTER A SHAPE WITH MORE THAN 3 SIDES BUT NO LESS THAN 10" << endl;
+        cout << "ERROR: INVALID INPUT\nYOU MAY ONLY ENTER INTEGERS FROM 3 TO 10" << endl;
     }
 }
   
