@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int num;
+    cout << "PLEASE ENTER THE MONTH TO ITS CORRESPONDING NUMBER: " << endl;
+    cout << "\nJAN - 1\nFEB - 2\nMAR - 3\nAPR - 4\nMAY - 5\nJUN - 6\nJUL - 7\nAUG - 8\nSEP - 9\nOCT - 10\nNOV - 11\nDEC - 12\n" << endl;
+    cout << "MONTH: ";
+    cin >> num;
+
+    switch (num) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 12:
+        cout << "31 DAYS" << endl;
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 10:
+    case 11:
+        cout << "30 DAYS" << endl;
+    case 2:
+        cout << "28 DAYS/29 DAYS (LEAP YEAR)" << endl;
+    default:
+        cout << "INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
+    }
