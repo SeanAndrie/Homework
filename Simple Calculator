@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std; 
+
+int a, b;
+    cout << "ENTER TWO NUMBERS: " << endl;
+    cout << "ENTER FIRST NUM: ";
+    cin >> a;
+    cout << "ENTER SECOND NUM: ";
+    cin >> b;
+
+    cout << "\nPICK A CALCULATION: " << endl;
+    cout << "1. ADDITION\n2: SUBTRACTION\n3. MULTIPLICATION\n4. DIVISION" << endl;
+
+    int input;
+    cin >> input;
+    switch (input) {
+
+    case 1:
+        cout << (a + b) << endl;
+        break;
+
+    case 2:
+        cout << (a - b) << endl;
+        break;
+
+    case 3:
+        cout << (a * b) << endl;
+        break;
+
+    case 4:
+        cout << (a / b) << endl;
+        break;
+
+    default:
+        cout << "INVALID INPUT" << endl;
+
+    }
