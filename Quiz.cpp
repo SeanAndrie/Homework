@@ -21,11 +21,25 @@ int main() {
 
     cout << "\nFIRST SUBJECT: ";
 
-    if (cin >> g1) {
+    while (!(cin >> g1) || (g1 >= 0 && g1 <= 100)) {
+        cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "\nFIRST SUBJECT: ";
+    }
 
-        cout << "SECOND SUBJECT: ";
+    if (g1 <= 100 && g1 >= 0) {
 
-        if (cin >> g2) {
+        cout << "\nSECOND SUBJECT: ";
+
+        while (!(cin >> g2) || (g1 >= 0 && g1 <= 100)) {
+            cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
+            cin.clear();
+            cin.ignore(123, '\n');
+            cout << "\nFIRST SUBJECT: ";
+        }
+
+        if (g2 <= 100 && g2 >= 0) {
 
             sum = g1 + g2;
             average = sum / 2;
@@ -57,13 +71,4 @@ int main() {
 
             }
         }
-
-        else {
-            cout << "\nERROR: INVALID INPUT\nPLEASE ENTER AN INTEGER" << endl;
-        }
     }
-
-    else {
-        cout << "\nERROR: INVALID INPUT\nPLEASE ENTER AN INTEGER" << endl;
-    }
-}
