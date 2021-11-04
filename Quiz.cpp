@@ -21,7 +21,7 @@ int main() {
 
     cout << "\nFIRST SUBJECT: ";
 
-    while (!(cin >> g1) || (g1 >= 0 && g1 <= 100)) {
+    while (!(cin >> g1) || !(g1 >= 0 && g1 <= 100)) {
         cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
         cin.clear();
         cin.ignore(123, '\n');
@@ -32,7 +32,7 @@ int main() {
 
         cout << "\nSECOND SUBJECT: ";
 
-        while (!(cin >> g2) || (g1 >= 0 && g1 <= 100)) {
+        while (!(cin >> g2) || !(g1 >= 0 && g1 <= 100)) {
             cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
             cin.clear();
             cin.ignore(123, '\n');
