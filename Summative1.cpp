@@ -38,7 +38,7 @@ int main() {
             cin.clear();
             cin.ignore(123, '\n');
             cout << "NOTE: SCORE MUST BE WITHIN THE BOUNDARY ( 0 - 100 )" << endl;
-            cout << "\nFIRST SUBJECT: ";
+            cout << "\nSECOND SUBJECT: ";
         }
 
         if (g2 <= 100 && g2 >= 0) {
