@@ -25,6 +25,7 @@ int main() {
         cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
         cin.clear();
         cin.ignore(123, '\n');
+        cout << "NOTE: SCORE MUST BE WITHIN THE BOUNDARY ( 0 - 100 )" << endl;
         cout << "\nFIRST SUBJECT: ";
     }
 
@@ -36,6 +37,7 @@ int main() {
             cout << "\nERROR: INVALID INPUT\nPLEASE TRY AGAIN..." << endl;
             cin.clear();
             cin.ignore(123, '\n');
+            cout << "NOTE: SCORE MUST BE WITHIN THE BOUNDARY ( 0 - 100 )" << endl;
             cout << "\nFIRST SUBJECT: ";
         }
 
@@ -51,22 +53,27 @@ int main() {
             case 8:
             case 7:
                 cout << "\nSTUDENT'S NAME: " << name << "\nAGE: " << age << "\nGRADE: A" << endl;
+                cout << "\nAVERAGE: " << average << endl;
                 break;
 
             case 6:
                 cout << "\nSTUDENT'S NAME:" << name << "\nAGE: " << age << "\nGRADE: B" << endl;
+                cout << "\nAVERAGE: " << average << endl;
                 break;
 
             case 5:
                 cout << "\nSTUDENT'S NAME:" << name << "\nAGE: " << age << "\nGRADE: C" << endl;
+                cout << "\nAVERAGE: " << average << endl;
                 break;
 
             case 4:
                 cout << "\nSTUDENT'S NAME:" << name << "\nAGE: " << age << "\nGRADE: D" << endl;
+                cout << "\nAVERAGE: " << average << endl;
                 break;
 
             default:
                 cout << "\nSTUDENT'S NAME:" << name << "\nAGE: " << age << "\nGRADE: F" << endl;
+                cout << "\nAVERAGE: " << average << endl;
                 break;
 
             }
