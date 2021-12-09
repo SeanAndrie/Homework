@@ -11,13 +11,14 @@ int main()
     cout << "PLEASE ENTER YOUR FULL NAME: ";
     getline(cin, fullName);
     
-    cout << "\nHELLO, " << fullName <<". PLEASE ENTER AN INTEGER TO GET THE FOLLOWING: \n1. FACTORIAL\n2. MULTIPLICATION TABLE FROM 1 TO 1O\n3. POWER FROM 1 TO 10" << endl;
+    cout << "\nHELLO, " << fullName <<". PLEASE ENTER AN INTEGER TO GET THE FOLLOWING: \n\n1. FACTORIAL\n2. MULTIPLICATION TABLE FROM 1 TO 1O\n3. POWER FROM 1 TO 10" << endl;
     cout << "\nENTER INPUT HERE: ";
     
     while (!(cin >> inp)){
         cout << "\nERROR: INVALID INPUT\nPLEASE ENTER AN INTEGER" << endl;
         cin.clear();
         cin.ignore(123, '\n');
+        cout << "\nENTER INPUT HERE: ";
     }
     
     
@@ -25,12 +26,12 @@ int main()
         fact *= i;
     }
     
-    cout << "FACTORIAL: " << endl;
+    cout << "\n1. FACTORIAL: " << endl;
     cout << endl;
     cout << "!" << inp << " = " << fact << endl;
     cout << endl;
     
-    cout << "TABLE FROM 1 TO 10: " << endl;
+    cout << "2. TABLE FROM 1 TO 10: " << endl;
     cout << endl;
     
     i = 1;
@@ -40,7 +41,7 @@ int main()
         i++;
     }
     
-    cout << "POWER FROM 1 - 10" << endl;
+    cout << "\n3. POWER FROM 1 TO 10: " << endl;
     cout << endl;
     
     i = 0;
@@ -54,3 +55,4 @@ int main()
         
     }while(i < 10);
 }
+
