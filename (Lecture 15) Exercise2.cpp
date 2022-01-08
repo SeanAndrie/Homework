@@ -26,6 +26,8 @@ int main(){
     }
 
     fact(num);
+    cout << "\nFACTORIAL OF " << num << " IS : " << fact(num) << endl;
+    cout << endl;
     table(num);
 }
 
@@ -42,7 +44,6 @@ int fact (int userNum){
 }
 
 void table (int userNum){
-    system("CLS");
 
     int mtable, pcounter = 0, ncounter = 0;
 
@@ -62,5 +63,5 @@ void table (int userNum){
 
     cout << endl;
     cout << "POSITIVE NUMBERS: " << pcounter << endl;
-    cout << "NEGATIVE NUMBERS: \n" << ncounter << endl;
+    cout << "NEGATIVE NUMBERS: " << ncounter << endl;
 }
