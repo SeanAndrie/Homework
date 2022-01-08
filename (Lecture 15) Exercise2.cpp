@@ -14,6 +14,7 @@ int main(){
     system("CLS");
     cout << "\nPLEASE ENTER YOUR FULL NAME: ";
     getline(cin, userName);
+    cout << "\nUSERNAME: " << userName << endl;
     cout << "\nPLEASE ENTER A NUMBER (LESS THAN 10): ";
 
     while (!(cin >> num) || num < 0 || num > 10){
